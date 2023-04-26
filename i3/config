@@ -7,3 +7,7 @@ bindsys $mod+a exec rofi -show run
 font pango:roboto 12px
 
 bindsys $mod+Shift+r restart
+
+bar {
+  status_command i3blocks
+}
