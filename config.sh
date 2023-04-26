@@ -7,7 +7,7 @@ commands() {
   
   cp -r i3/config ~/.config/i3/config
   cp -r i3blocks/config ~/.config/i3blocks/config
-  cp -r bg/waifu.jpg ~/bg/waifu.jpg
+  cp -r bg/bg.jpg ~/bg/bg.jpg
 }
 
 commands
