@@ -1,3 +1,4 @@
+#!bin/bash
 command() {
   pacman -Sy
   sudo su
@@ -8,3 +9,5 @@ command() {
   mv i3blocks/config ~/.config/i3blocks/config
   sudo lightdm
 }
+
+command
