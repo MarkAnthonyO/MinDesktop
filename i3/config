@@ -1,10 +1,12 @@
+#i3 config file (v4)
+
 exec_always feh --bg-scale ~/bg/waifu.png #XD
 
-$mod=mod1
+set $mod Mod1
 
 bindsys $mod+a exec rofi -show run
 
-font pango:roboto 12px
+font pango:monospace 8
 
 bindsys $mod+Shift+r restart
 
