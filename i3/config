@@ -4,7 +4,7 @@ exec_always feh --bg-scale ~/bg/waifu.jpg
 
 set $mod Mod1
 
-bindsys $mod+a exec rofi -show run
+bindsys $mod+Return exec rofi -show run
 
 font pango:monospace 8
 
