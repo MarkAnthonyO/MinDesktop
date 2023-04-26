@@ -6,7 +6,7 @@ command() {
   pacman -S rofi
   pacman -S feh
   systemctl lightdm enable
-  lightdm
+  echo "You need restart the pc"
 }
 
 command
