@@ -1,6 +1,7 @@
 #!/bin/bash
 command() {
   pacman -Sy
+  mkdir ~/.config
   mkdir ~/.config/i3/
   mkdir ~/.config/i3blocks/
   pacman -S i3
