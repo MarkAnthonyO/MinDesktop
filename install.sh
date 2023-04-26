@@ -1,7 +1,6 @@
 #!/bin/bash
 command() {
   pacman -Sy
-  sudo su
   mkdir .config/
   pacman -S i3
   pacman -S lightdm
