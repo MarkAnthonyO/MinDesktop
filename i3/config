@@ -1,6 +1,6 @@
 #i3 config file (v4)
 
-exec_always feh --bg-scale ~/bg/waifu.jpg
+exec feh --bg-scale ~/bg/bg.jpg
 
 set $mod Mod1
 
