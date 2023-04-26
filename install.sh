@@ -5,6 +5,7 @@ command() {
   mkdir ~/.config/i3blocks/
   pacman -S i3
   pacman -S lightdm-gtk-greeter
+  pacman -S rofi
   mv /i3/config ~/.config/i3/config
   mv /i3blocks/config ~/.config/i3blocks/config
   systemctl lightdm enable
