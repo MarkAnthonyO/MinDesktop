@@ -1,2 +1,2 @@
-# arch-linux-environment-config
+# My custom arch environment config of i3wm
 My config of i3
