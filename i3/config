@@ -1,0 +1,9 @@
+exec_always feh --bg-scale ~/bg/waifu.png #XD
+
+$mod=mod1
+
+bindsys $mod+a exec rofi -show run
+
+font pango:roboto 12px
+
+bindsys $mod+Shift+r restart
