@@ -1,15 +1,45 @@
 #i3 config file (v4)
-
-exec feh --bg-scale ~/bg/bg.jpg
-
-set $mod Mod1
-
-bindsys $mod+Return exec rofi -show run
-
 font pango:monospace 8
 
+floating_minimum_size 640 × 480
+floating_maximum_size -1 × -1
+
+default_orientation horizontal
+
+workspace_layout tabbed
+
+title_align center
+
+default_border none
+
+hide_edge_borders vertical
+
+smart_borders on
+
+# key conf
+set $mod Mod1
+
 bindsys $mod+Shift+r restart
+bindsys $mod+Return exec rofi -show run
+bindsys $mod+f
+
+exec_always feh --bg-scale ~/bg/bg.jpg
+
+client.focused #f5c5c5c #5c5c5c #ffffff #f7bd1b #285577
+client.background #ffffff
+
+focus_follows_mouse no
+
+popup_during_fullscreen smart
+
+focus_wrapping workspace
+
+gaps outer 10px
+gaps inner 10px
+
+smart_gaps on
+
 
 bar {
-  status_command i3blocks
+  status_command i3status
 }
