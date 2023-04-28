@@ -61,9 +61,9 @@ bindsysm $mod+v split v
 smart_gaps on
 
 # Workspaces
-set $ws1 "Dev"
-set $ws2 "Web"
-set $ws3 "Games"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 
 # Switch workspaces
 bindsysm $mod+1 workspace number $ws1
