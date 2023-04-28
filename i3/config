@@ -1,4 +1,10 @@
 #i3 config file (v4)
+
+# key conf
+set $mod Mod4
+
+exec --no-startup-id hex --autostart --environment i3
+
 font pango:monospace 8
 
 default_orientation horizontal
@@ -31,8 +37,6 @@ focus_wrapping workspace
 gaps outer 10px
 gaps inner 10px
 
-# key conf
-set $mod Mod4
 # Reload configuration i3
 bindsysm $mod+r reload
 # Open terminal
@@ -76,6 +80,5 @@ bindsysm $mod+Shift+2 move container to workspace number $ws2
 bindsysm $mod+Shift+3 move container to workspace number $ws3
 
 bar {
-  gaps outer 10px
   status_command i3status
 }
