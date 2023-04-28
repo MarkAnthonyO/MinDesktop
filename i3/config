@@ -76,6 +76,6 @@ bindsysm $mod+Shift+2 move container to workspace number $ws2
 bindsysm $mod+Shift+3 move container to workspace number $ws3
 
 bar {
-  padding 5px
+  gaps outer 10px
   status_command i3status
 }
