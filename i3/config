@@ -19,7 +19,7 @@ hide_edge_borders vertical
 
 smart_borders on
 
-exec --no-startup-id feh --bg-scale ~/bg/bg.jpg
+exec --no-startup-id "feh --bg-scale ~/bg/bg.jpg"
 
 client.focused #f5c5c5c #5c5c5c #ffffff #f7bd1b #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
@@ -42,7 +42,7 @@ bindsysm $mod+r reload
 # Open terminal
 bindsysm $mod+t exec i3-sensible-terminal
 # Open application launcher
-bindsysm $mod+Return exec rofi -show run
+bindsysm $mod+Return exec "rofi -show run"
 # Kill focused aplication
 bindsysm $mod+q kill
 
