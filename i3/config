@@ -3,7 +3,7 @@ font pango:monospace 8
 
 default_orientation horizontal
 
-workspace_layout tabbed
+workspace_layout default
 
 title_align center
 
@@ -12,6 +12,8 @@ default_border normal
 hide_edge_borders vertical
 
 smart_borders on
+
+border pixel 1
 
 exec_always --no-startup-id feh --bg-scale ~/bg/bg.jpg
 
@@ -28,28 +30,27 @@ popup_during_fullscreen smart
 
 focus_wrapping workspace
 
-gaps outer 10px
 gaps inner 10px
 
 smart_gaps on
 
 # key conf
 set $mod Mod4
-bindsys $mod+Shift+r restart
-bindsys $mod+Return exec rofi -show run
-bindsys $mod+q kill
+bindsym $mod+Shift+r restart
+bindsym $mod+Return exec rofi -show run
+bindsym $mod+q kill
 # focus
-bindsys $mod+Left focus left
-bindsys $mod+Right focus right
-bindsys $mod+Down focus down
-bindsys $mod+Up focus up
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
 # Move
-bindsys $mod+Shift+Left focus left
-bindsys $mod+Shift+Right focus right
-bindsys $mod+Shift+Down focus down
-bindsys $mod+Shift+Up focus up
+bindsym $mod+Shift+Left focus left
+bindsym $mod+Shift+Right focus right
+bindsym $mod+Shift+Down focus down
+bindsym $mod+Shift+Up focus up
 
 bar {
-  padding 5px
+  margin 5px
   status_command i3status
 }
