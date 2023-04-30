@@ -1,23 +1,22 @@
+
 #i3 config file (v4)
+
+# key conf
+set $mod Mod4
+
+exec --no-startup-id hex --autostart --environment i3
+
 font pango:monospace 8
 
 default_orientation horizontal
 
 workspace_layout default
 
-title_align center
-
-default_border normal
-
-hide_edge_borders vertical
-
-smart_borders on
-
 default_border pixel 1
 
-exec_always --no-startup-id feh --bg-scale ~/bg/bg.jpg
+exec_always --no-startup-id "feh --bg-scale ~/bg/bg.jpg"
 
-client.focused #f5c5c5c #5c5c5c #ffffff #f7bd1b #285577
+client.focused          #5c5c5c #5c5c5c #ffffff #f7bd1b #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -28,27 +27,53 @@ focus_follows_mouse no
 
 popup_during_fullscreen smart
 
-focus_wrapping workspace
-
+#gaps outer 10px
 gaps inner 10px
+
+# Reload configuration i3
+bindsym $mod+r reload
+
+# Open terminal
+bindsym $mod+t exec i3-sensible-terminal
+
+# Open application launcher
+bindsym $mod+Return exec "rofi -show run"
+
+# Kill focused aplication
+bindsym $mod+q kill
+
+# Focus
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+
+# Move
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+
+# Split
+bindsym $mod+h split h
+bindsym $mod+v split v
 
 smart_gaps on
 
-# key conf
-set $mod Mod4
-bindsym $mod+Shift+r restart
-bindsym $mod+Return exec rofi -show run
-bindsym $mod+q kill
-# focus
-bindsym $mod+Left focus left
-bindsym $mod+Right focus right
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-# Move
-bindsym $mod+Shift+Left focus left
-bindsym $mod+Shift+Right focus right
-bindsym $mod+Shift+Down focus down
-bindsym $mod+Shift+Up focus up
+# Workspaces
+set $ws1 "Dev"
+set $ws2 "Web"
+set $ws3 "Games"
+
+# Switch workspaces
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+
+# Move focused to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
 
 bar {
   status_command i3status
