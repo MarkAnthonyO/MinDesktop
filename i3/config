@@ -29,7 +29,7 @@ focus_follows_mouse no
 popup_during_fullscreen smart
 
 #gaps outer 10px
-#gaps inner 10px
+gaps inner 10px
 
 # Reload configuration i3
 bindsym $mod+r reload
