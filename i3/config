@@ -1,10 +1,11 @@
-
 #i3 config file (v4)
 
 # key conf
 set $mod Mod4
 
 exec --no-startup-id hex --autostart --environment i3
+exec --no-startup-id polybar time --config=/home/marco/.config/polybar/config.ini
+exec --no-startup-id polybar date --config=/home/marco/.config/polybar/config.ini
 
 font pango:monospace 8
 
@@ -28,7 +29,7 @@ focus_follows_mouse no
 popup_during_fullscreen smart
 
 #gaps outer 10px
-gaps inner 10px
+#gaps inner 10px
 
 # Reload configuration i3
 bindsym $mod+r reload
@@ -58,7 +59,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 bindsym $mod+v split v
 
-smart_gaps on
+#smart_gaps on
 
 # Workspaces
 set $ws1 "Dev"
@@ -74,7 +75,3 @@ bindsym $mod+3 workspace $ws3
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
-
-bar {
-  status_command i3status
-}
