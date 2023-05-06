@@ -3,19 +3,15 @@
 # key conf
 set $mod Mod4
 
-exec --no-startup-id hex --autostart --environment i3
-exec --no-startup-id polybar time --config=/home/marco/.config/polybar/config.ini
-exec --no-startup-id polybar date --config=/home/marco/.config/polybar/config.ini
-
-font pango:monospace 8
+exec_always --no-startup-id feh --bg-scale ~/bg/bg.jpg
+exec --no-startup-id polybar;
+font noto:regular 8
 
 default_orientation horizontal
 
 workspace_layout default
 
 default_border pixel 1
-
-exec_always --no-startup-id "feh --bg-scale ~/bg/bg.jpg"
 
 client.focused          #5c5c5c #5c5c5c #ffffff #f7bd1b #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
@@ -62,9 +58,9 @@ bindsym $mod+v split v
 #smart_gaps on
 
 # Workspaces
-set $ws1 "Dev"
-set $ws2 "Web"
-set $ws3 "Games"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 
 # Switch workspaces
 bindsym $mod+1 workspace $ws1
@@ -75,3 +71,6 @@ bindsym $mod+3 workspace $ws3
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
+
+# Exit
+bindsym $mod+e exec i3-msg exit

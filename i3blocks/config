@@ -1,8 +1,0 @@
-[click]
-full_text=Clik
-command=echo "Se ha presionado el boton: $button"
-color=#FFCD55
-
-[time]
-command=date +%T
-interval=5
