@@ -1,12 +1,15 @@
 #!/bin/bash
 command() {
-  pacman -Sy
-  pacman -S i3
-  pacman -S lightdm-gtk-greeter
-  pacman -S rofi
-  pacman -S feh
-  systemctl lightdm enable
-  echo "You need restart the pc"
+  sudo pacman -Sy
+  sudo pacman -S i3
+  sudo pacman -S lightdm-gtk-greeter
+  sudo pacman -S rofi
+  sudo pacman -S feh
+  sudo pacman -S tk
+  sudo systemctl enable lightdm
+  cd ..
+  git clone https://github.com/MarkAnthonyO/PowerMenu.git
+  cd MinDesktop/
 }
 
 command

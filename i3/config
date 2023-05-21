@@ -73,4 +73,4 @@ bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 
 # Exit
-bindsym $mod+e exec i3-msg exit
+bindsym $mod+e exec ~/.config/PowerMenu/config/main.py
