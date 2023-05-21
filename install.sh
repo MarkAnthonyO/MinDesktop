@@ -13,7 +13,7 @@ command() {
   sudo pacman -S ttf-font-awesome
   sudo pacman -S pulseaudio
   sudo pacman -S pavucontrol
-  sudo pacman -S 
+  sudo pacman -S firefox
   sudo systemctl enable lightdm
   
   # Installation PowerMenu
