@@ -14,6 +14,7 @@ command() {
   sudo pacman -S pulseaudio
   sudo pacman -S pavucontrol
   sudo pacman -S firefox
+  sudo pacman -S kitty
   sudo systemctl enable lightdm
   
   # Installation PowerMenu
