@@ -9,21 +9,22 @@ command() {
   sudo pacman -S tk
   sudo pacman -S noto-fonts
   sudo pacman -S noto-fonts-emoji
-  sudo pacman -S noto-fonts-cjf
+  sudo pacman -S noto-fonts-cjk
   sudo pacman -S ttf-font-awesome
-  sudo pacman -S pulseaudio
-  sudo pacman -S pavucontrol
   sudo pacman -S firefox
   sudo pacman -S kitty
+  sudo pacman -S polybar
   sudo systemctl enable lightdm
   
   # Installation PowerMenu
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
 
-  # Installation Paru AUR Helper
+  # Installation Yay AUR Helper
   sudo pacman -S --needed base-devel
-  git clone https://aur.archlinux.org/paru.git
-  
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  cd ..
 
   # Configurations
   mkdir ~/bg/
@@ -35,16 +36,10 @@ command() {
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
   cp -r bg/bg.jpg ~/bg/bg.jpg
 
-  cd ..
-
   cd PowerMenu/
   mkdir ~/.config/PowerMenu/
   cp -r config/ ~/.config/PowerMenu/
-
   cd ..
-
-  cd paru
-  makepkg -si
 }
 
 command

@@ -34,7 +34,7 @@ bindsym $mod+r reload
 bindsym $mod+t exec i3-sensible-terminal
 
 # Open application launcher
-bindsym $mod+Return exec "rofi -show run"
+bindsym $mod+Return exec "rofi -show drun"
 
 # Kill focused aplication
 bindsym $mod+q kill
@@ -55,8 +55,6 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 bindsym $mod+v split v
 
-#smart_gaps on
-
 # Workspaces
 set $ws1 "1"
 set $ws2 "2"
@@ -73,4 +71,4 @@ bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
 
 # Exit
-bindsym $mod+e exec ~/.config/PowerMenu/config/main.py
+bindsym $mod+e exec python ~/.config/PowerMenu/config/main.py
