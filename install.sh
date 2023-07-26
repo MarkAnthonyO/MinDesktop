@@ -11,9 +11,17 @@ command() {
   sudo pacman -S noto-fonts-emoji
   sudo pacman -S noto-fonts-cjk
   sudo pacman -S ttf-font-awesome
+  sudo pacman -S otf-font-awesome
   sudo pacman -S firefox
   sudo pacman -S kitty
   sudo pacman -S polybar
+  sudo pacman -S flatpak
+  sudo pacman -S vlc
+  flatpak install flathub cc.arduino.IDE2
+  flatpak install flathub com.google.Chrome
+  flatpak install flathub com.github.micahflee.torbrowser-launcher
+  flatpak install flathub com.discordapp.Discord
+  flatpak install flathub com.spotify.Client
   sudo systemctl enable lightdm
   
   # Installation PowerMenu
