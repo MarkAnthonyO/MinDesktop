@@ -17,6 +17,7 @@ command() {
   sudo pacman -S polybar
   sudo pacman -S flatpak
   sudo pacman -S vlc
+  sudo pacman -S pamixer
   flatpak install flathub cc.arduino.IDE2
   flatpak install flathub com.google.Chrome
   flatpak install flathub com.github.micahflee.torbrowser-launcher
