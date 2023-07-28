@@ -17,7 +17,11 @@ command() {
   sudo pacman -S polybar
   sudo pacman -S flatpak
   sudo pacman -S vlc
+  sudo pacman -S ranger
   sudo pacman -S pamixer
+  sudo pacman -S networkmanager
+  sudo pacman -S unzip
+  sudo pacman -S ranger
   flatpak install flathub cc.arduino.IDE2
   flatpak install flathub com.google.Chrome
   flatpak install flathub com.github.micahflee.torbrowser-launcher
@@ -44,6 +48,7 @@ command() {
   cp -r i3/config ~/.config/i3/config
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
   cp -r bg/bg.jpg ~/bg/bg.jpg
+  cp -r NetworkManager/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
 
   cd PowerMenu/
   mkdir ~/.config/PowerMenu/
