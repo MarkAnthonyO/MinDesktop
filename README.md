@@ -1,2 +1,2 @@
-# My custom arch environment config of i3wm
-My config of i3
+# My custom arch environment config of bspwm
+My config of bspwm

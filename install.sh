@@ -1,33 +1,22 @@
 #!/bin/bash
 command() {
-  # Instalation packages
-  sudo pacman -Sy
-  sudo pacman -S i3
-  sudo pacman -S lightdm-gtk-greeter
-  sudo pacman -S rofi
-  sudo pacman -S feh
+  # Instalation fonts
+  sudo pacman -Syu
   sudo pacman -S tk
   sudo pacman -S noto-fonts
   sudo pacman -S noto-fonts-emoji
   sudo pacman -S noto-fonts-cjk
   sudo pacman -S ttf-font-awesome
   sudo pacman -S otf-font-awesome
-  sudo pacman -S firefox
-  sudo pacman -S kitty
+  sudo pacman -S xdg-desktop-portal
+
+  sudo pacman -S sxhkd
+  sudo pacman -S nitrogen
+  sudo pacman -S picom
   sudo pacman -S polybar
-  sudo pacman -S flatpak
-  sudo pacman -S vlc
-  sudo pacman -S ranger
-  sudo pacman -S pamixer
-  sudo pacman -S networkmanager
-  sudo pacman -S unzip
-  sudo pacman -S ranger
-  flatpak install flathub cc.arduino.IDE2
-  flatpak install flathub com.google.Chrome
-  flatpak install flathub com.github.micahflee.torbrowser-launcher
-  flatpak install flathub com.discordapp.Discord
-  flatpak install flathub com.spotify.Client
-  sudo systemctl enable lightdm
+  sudo pacman -S dunst
+
+  sudo systemctl enable sddm
   
   # Installation PowerMenu
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
@@ -40,15 +29,21 @@ command() {
   cd ..
 
   # Configurations
-  mkdir ~/bg/
   mkdir ~/.config/
-  mkdir ~/.config/i3/
+  mkdir ~/.config/bspwm/
+  mkdir ~/.config/sxhkd/
   mkdir ~/.config/polybar/
+  mkdir ~/.config/dunst/
 
-  cp -r i3/config ~/.config/i3/config
+  cp -r bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+
+  cp -r sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
-  cp -r bg/bg.jpg ~/bg/bg.jpg
-  cp -r NetworkManager/NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
+
+  cp -r dunst/dunstrc ~/.config/dunst/dunstrc
+
+  cp -r picom.conf ~/.config/picom.conf
 
   cd PowerMenu/
   mkdir ~/.config/PowerMenu/

@@ -1,0 +1,29 @@
+super + Return
+           fish -c "rofi -show drun"
+
+super + {1-5}
+	   bspc desktop -f '^{1-5}'
+
+super + shift + {1-5}
+           bspc node -d '^{1-5}'
+
+super + Left
+           bspc node prev -f
+
+super + Right
+           bspc node next -f
+
+super + shift + {Left,Down,Up,Right}
+           bspc node -p {west, south, north, east}
+           
+super + e
+           python .config/PowerMenu/config/main.py
+
+super + q
+           bspc node -c
+
+super + k
+	   bspc node -k
+
+super + f
+           gnome-screenshot

@@ -1,0 +1,38 @@
+[global]
+    font = "Nimbus Mono PS 12"
+    
+    markup = yes
+    format = "<b>%a</b> %s\n %b"
+    
+    width = 350
+    alignment = center
+    
+    icon_corner_radius = 10
+        
+    separator_color = frame
+    vertical_alignment = center
+
+    background = "#434343"
+    foreground = "#FFFFFF"
+    
+    frame_width = 3
+    show_indicators = false
+    max_icon_size = 100
+    corner_radius = 10
+    word_wrap = yes
+    separator_height = 2
+    separator_color = auto
+    ignore_newline = no
+    stack_duplicates = yes
+
+[urgency_low]
+    frame_color = "#1cd36e"
+    timeout = 8
+
+[urgency_normal]
+    frame_color = "#ffb000"
+    timeout = 10
+
+[urgency_critical]
+    frame_color = "#d31c1c"
+    timeout = 20
