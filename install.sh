@@ -8,13 +8,15 @@ command() {
   sudo pacman -S noto-fonts-cjk
   sudo pacman -S ttf-font-awesome
   sudo pacman -S otf-font-awesome
-  sudo pacman -S xdg-desktop-portal
+  sudo pacman -S xdg-desktop-portal-gtk
 
   sudo pacman -S sxhkd
   sudo pacman -S nitrogen
   sudo pacman -S picom
   sudo pacman -S polybar
   sudo pacman -S dunst
+  sudo pacman -S sddm
+  sudo pacman -S python
 
   sudo systemctl enable sddm
   
