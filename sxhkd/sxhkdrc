@@ -1,5 +1,5 @@
 super + Return
-           fish -c "rofi -show drun"
+          rofi -show drun
 
 super + {1-5}
 	   bspc desktop -f '^{1-5}'
