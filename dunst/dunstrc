@@ -27,7 +27,7 @@
 
 [urgency_low]
     frame_color = "#1cd36e"
-    timeout = 8
+    timeout = 5
 
 [urgency_normal]
     frame_color = "#ffb000"
