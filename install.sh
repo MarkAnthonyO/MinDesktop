@@ -16,10 +16,10 @@ command() {
   sudo pacman -S picom
   sudo pacman -S polybar
   sudo pacman -S dunst
-  sudo pacman -S sddm
+  sudo pacman -S gdm
   sudo pacman -S python
 
-  sudo systemctl enable sddm
+  sudo systemctl enable gdm
   
   # Installation PowerMenu
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
