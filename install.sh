@@ -10,6 +10,7 @@ command() {
   sudo pacman -S otf-font-awesome
   sudo pacman -S xdg-desktop-portal-gtk
   sudo pacman -S xdg-user-dirs
+  sudo pacman -S gnome-screenshot
 
   sudo pacman -S sxhkd
   sudo pacman -S nitrogen
@@ -20,6 +21,7 @@ command() {
   sudo pacman -S python
 
   sudo systemctl enable gdm
+  xdg-user-dirs-update
   
   # Installation PowerMenu
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
