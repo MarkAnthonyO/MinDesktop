@@ -15,7 +15,7 @@
     background = "#434343"
     foreground = "#FFFFFF"
     
-    frame_width = 3
+    frame_width = 2
     show_indicators = false
     max_icon_size = 100
     corner_radius = 10
