@@ -9,6 +9,7 @@ command() {
   sudo pacman -S ttf-font-awesome
   sudo pacman -S otf-font-awesome
   sudo pacman -S xdg-desktop-portal-gtk
+  sudo pacman -S xdg-user-dirs
 
   sudo pacman -S sxhkd
   sudo pacman -S nitrogen
