@@ -2,7 +2,7 @@
     font = "Nimbus Mono PS 12"
     
     markup = yes
-    format = "<b>%a</b> %s\n %b"
+    format = "<b>%a</b>\n %s\n %b"
     
     width = 350
     alignment = center
