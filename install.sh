@@ -2,9 +2,9 @@
 command() {
   # Instalation fonts
   sudo pacman -Syu
-  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst gdm python konsole
+  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst sddm python konsole
 
-  sudo systemctl enable gdm
+  sudo systemctl enable sddm
   xdg-user-dirs-update
   
   # Installation PowerMenu
