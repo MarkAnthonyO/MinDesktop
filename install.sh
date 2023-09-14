@@ -11,7 +11,6 @@ command() {
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
 
   # Configurations
-  mkdir ~/.config/
   mkdir ~/.config/bspwm/
   mkdir ~/.config/sxhkd/
   mkdir ~/.config/polybar/
