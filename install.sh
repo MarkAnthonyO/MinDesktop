@@ -24,7 +24,7 @@ command() {
   cp -r jgmenu/jgmenurc ~/.config/jgmenu/
   cp -r jgmenu/menu.csv ~/.config/jgmenu/
   #Setting fish greeting
-  set -U fish_greeting
+  exec "set -U fish_greeting"
 }
 
 command
