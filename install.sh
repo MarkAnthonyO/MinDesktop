@@ -11,7 +11,6 @@ command() {
   sudo pacman -S xdg-desktop-portal-gtk
   sudo pacman -S xdg-user-dirs
   sudo pacman -S gnome-screenshot
-
   sudo pacman -S sxhkd
   sudo pacman -S nitrogen
   sudo pacman -S picom
