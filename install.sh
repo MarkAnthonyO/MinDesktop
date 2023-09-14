@@ -23,8 +23,6 @@ command() {
   cp -r .bashrc ~/.bashrc
   cp -r jgmenu/jgmenurc ~/.config/jgmenu/
   cp -r jgmenu/menu.csv ~/.config/jgmenu/
-  #Setting fish greeting
-  exec "set -U fish_greeting"
 }
 
 command
