@@ -12,7 +12,7 @@ command() {
   mkdir ~/.config/sxhkd/
   mkdir ~/.config/polybar/
   mkdir ~/.config/dunst/
-  mkdit ~/.config/jgmenu/
+  mkdir ~/.config/jgmenu/
 
   # Copy configurations for Desktop environment
   cp -r bspwm/bspwmrc ~/.config/bspwm/bspwmrc
