@@ -21,7 +21,8 @@ command() {
   cp -r dunst/dunstrc ~/.config/dunst/dunstrc
   cp -r picom.conf ~/.config/picom.conf
   cp -r .bashrc ~/.bashrc
-  cp -r jgmenu/ ~/.config/jgmenu/
+  cp -r jgmenu/jgmenurc ~/.config/jgmenu/
+  cp -r jgmenu/menu.csv ~/.config/jgmenu/
 }
 
 command
