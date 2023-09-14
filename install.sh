@@ -2,22 +2,7 @@
 command() {
   # Instalation fonts
   sudo pacman -Syu
-  sudo pacman -S tk
-  sudo pacman -S noto-fonts
-  sudo pacman -S noto-fonts-emoji
-  sudo pacman -S noto-fonts-cjk
-  sudo pacman -S ttf-font-awesome
-  sudo pacman -S otf-font-awesome
-  sudo pacman -S xdg-desktop-portal-gtk
-  sudo pacman -S xdg-user-dirs
-  sudo pacman -S gnome-screenshot
-  sudo pacman -S sxhkd
-  sudo pacman -S nitrogen
-  sudo pacman -S picom
-  sudo pacman -S polybar
-  sudo pacman -S dunst
-  sudo pacman -S gdm
-  sudo pacman -S python
+  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst gdm python
 
   sudo systemctl enable gdm
   xdg-user-dirs-update
