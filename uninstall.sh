@@ -2,8 +2,6 @@
 command() {
   # Uninstall packages
   sudo pacman -Rsn tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst sddm python konsole
-  rm -r PowerMenu/
-  rm -r ~/.config/PowerMenu/
   # Remove configurations
   rm -r ~/.config/bspwm/
   rm -r ~/.config/sxhkd/
