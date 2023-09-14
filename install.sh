@@ -7,9 +7,6 @@ command() {
   sudo systemctl enable sddm
   xdg-user-dirs-update
   
-  # Installation PowerMenu
-  git clone https://github.com/MarkAnthonyO/PowerMenu.git  
-
   # Configurations
   mkdir ~/.config/bspwm/
   mkdir ~/.config/sxhkd/
@@ -22,11 +19,6 @@ command() {
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
   cp -r dunst/dunstrc ~/.config/dunst/dunstrc
   cp -r picom.conf ~/.config/picom.conf
-
-  cd PowerMenu/
-  mkdir ~/.config/PowerMenu/
-  cp -r config/ ~/.config/PowerMenu/
-  cd ..
 }
 
 command
