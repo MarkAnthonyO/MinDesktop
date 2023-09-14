@@ -2,7 +2,7 @@
 command() {
   # Instalation fonts
   sudo pacman -Syu
-  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst sddm python konsole
+  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot sxhkd nitrogen picom polybar dunst sddm python konsole fish neofetch
 
   sudo systemctl enable sddm
   xdg-user-dirs-update
@@ -19,6 +19,7 @@ command() {
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
   cp -r dunst/dunstrc ~/.config/dunst/dunstrc
   cp -r picom.conf ~/.config/picom.conf
+  cp -r .bashrc ~/.bashrc
 }
 
 command
