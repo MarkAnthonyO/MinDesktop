@@ -10,13 +10,6 @@ command() {
   # Installation PowerMenu
   git clone https://github.com/MarkAnthonyO/PowerMenu.git  
 
-  # Installation Yay AUR Helper
-  sudo pacman -S --needed base-devel
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
-  cd ..
-
   # Configurations
   mkdir ~/.config/
   mkdir ~/.config/bspwm/
@@ -24,14 +17,11 @@ command() {
   mkdir ~/.config/polybar/
   mkdir ~/.config/dunst/
 
+  # Copy configurations for Desktop environment
   cp -r bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-
   cp -r sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
-
   cp -r dunst/dunstrc ~/.config/dunst/dunstrc
-
   cp -r picom.conf ~/.config/picom.conf
 
   cd PowerMenu/
