@@ -2,7 +2,7 @@
 command() {
   # Instalation fonts
   sudo pacman -Syu
-  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot lxappearance sxhkd nitrogen picom polybar dunst lightdm python konsole pulseaudio pavucontrol fish neofetch
+  sudo pacman -S tk noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-font-awesome otf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot lxappearance sxhkd nitrogen picom polybar dunst lightdm python jgmenu konsole pulseaudio pavucontrol fish neofetch
 
   sudo systemctl enable lightdm
   xdg-user-dirs-update
