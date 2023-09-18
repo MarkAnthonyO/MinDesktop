@@ -27,3 +27,6 @@ super + k
 
 super + f
            gnome-screenshot
+
+super + @space
+           bspc node -t ~floating
