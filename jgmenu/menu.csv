@@ -1,3 +1,4 @@
- Salir,bspc quit,Exit to SDDM
- Reiniciar,reboot,Reboot computer
- Apagar,shutdown now,Shutdown Computer
+ Salir,bspc quit,Finaliza la sesion bspwm
+ Reiniciar,reboot,Finaliza la sesion bspwm y reinicia la computadora
+ Suspender,systemctl suspend,La computadora entra en estado de descanso
+ Apagar,shutdown now,Finaliza la sesion bspwm y apaga la computadora
