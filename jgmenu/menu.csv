@@ -1,4 +1,4 @@
- Salir,bspc quit,Finaliza la sesion bspwm
+ Apagar,shutdown now,Finaliza la sesion bspwm y apaga la computadora
  Reiniciar,reboot,Finaliza la sesion bspwm y reinicia la computadora
  Suspender,systemctl suspend,La computadora entra en estado de descanso
- Apagar,shutdown now,Finaliza la sesion bspwm y apaga la computadora
+ Salir,bspc quit,Finaliza la sesion bspwm
