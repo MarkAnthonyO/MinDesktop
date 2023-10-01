@@ -3,15 +3,16 @@ My config of bspwm
 
 ***Dependencies***
 
-* Bspwm
-* Dunst
-* Jgmenu
-* Polybar
-* Sxhkd
-* Picom
+* bspwm
+* dunst
+* jgmenu
+* polybar
+* sxhkd
+* picom
 * fish
 * noto-fonts
 * noto-fonts-emoji
 * noto-fonts-cjk
 * ttf-font-awesome
 * ttf-jetbrains-mono-nerd
+* pulseaudio
