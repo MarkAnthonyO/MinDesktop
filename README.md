@@ -10,3 +10,8 @@ My config of bspwm
 * Sxhkd
 * Picom
 * fish
+* noto-fonts
+* noto-fonts-emoji
+* noto-fonts-cjk
+* ttf-font-awesome
+* ttf-jetbrains-mono-nerd
