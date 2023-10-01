@@ -8,11 +8,11 @@ super + shift + {1-5}
            bspc node -d '^{1-5}'
 
 super + Left
-           bspc node prev -f
+	   bspc node -f prev.local.window
 
 super + Right
-           bspc node next -f
-
+	   bspc node -f next.local.window
+           
 super + shift + {Left,Down,Up,Right}
            bspc node -p {west, south, north, east}
            
@@ -29,4 +29,4 @@ super + f
            gnome-screenshot
 
 super + @space
-           bspc node -t ~floating
+		   bspc node -t ~floating
