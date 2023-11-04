@@ -17,7 +17,7 @@
     
 	    frame_width = 1
     show_indicators = false
-    max_icon_size = 100
+    max_icon_size = 80
     corner_radius = 10
     word_wrap = yes
     separator_height = 2
