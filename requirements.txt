@@ -16,7 +16,7 @@ xorg
 
 gpicview
 
-lxappearance
+lxappearance-gtk3
 
 xorg-apps
 
