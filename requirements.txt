@@ -14,8 +14,6 @@ xdg-user-dirs-gtk
 
 xorg
 
-obconf
-
 gpicview
 
 lxappearance
@@ -36,9 +34,9 @@ nitrogen
 
 firefox
 
-openbox
+bspwm
 
-plank
+sxhkd
 
 ark
 
@@ -49,6 +47,12 @@ noto-fonts-emoji
 polkit-gnome
 
 gnome-keyring
+
+noto-fonts
+
+noto-fonts-cjk
+
+noto-fonts-emoji
 
 ttf-jetbrains-mono-nerd
 
