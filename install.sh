@@ -1,11 +1,11 @@
 #!/bin/bash
 command() {
-  # Instalation fonts
-  sudo pacman -Syu
-  sudo pacman -S tk noto-fonts noto-fonts-emoji ttf-jetbrains-mono-nerd otf-font-awesome polkit-gnome noto-fonts-cjk ttf-font-awesome xdg-desktop-portal-gtk xdg-user-dirs gnome-screenshot gnome-keyring sxhkd rofi nitrogen picom polybar dunst lightdm python jgmenu lightdm-gtk-greeter lightdm konsole pulseaudio pavucontrol fish neofetch bspwm
+  # Instalation dependencies
+  sudo pacman -Sy
+  sudo pacman -S - < requirements.txt
 
   sudo systemctl enable lightdm
-  xdg-user-dirs-update
+  xdg-user-dirs-gtk-update
   
   # Configurations
   mkdir ~/.config/bspwm/
@@ -20,7 +20,6 @@ command() {
   cp -r polybar/config.ini  ~/.config/polybar/config.ini
   cp -r dunst/dunstrc ~/.config/dunst/dunstrc
   cp -r picom.conf ~/.config/picom.conf
-  cp -r .bashrc ~/.bashrc
   cp -r jgmenu/jgmenurc ~/.config/jgmenu/
   cp -r jgmenu/menu.csv ~/.config/jgmenu/
 }
