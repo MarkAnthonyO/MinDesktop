@@ -16,5 +16,6 @@ nitrogen --restore &
 picom & --experimental-backends
 polybar main &
 dunst &
+setxkbmap es &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
