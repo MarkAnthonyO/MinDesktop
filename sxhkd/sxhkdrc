@@ -15,9 +15,6 @@ super + Right
            
 super + shift + {Left,Down,Up,Right}
            bspc node -p {west, south, north, east}
-           
-super + e
-           python .config/PowerMenu/config/main.py
 
 super + q
            bspc node -c
