@@ -12,16 +12,13 @@ command() {
   mkdir ~/.config/sxhkd/
   mkdir ~/.config/polybar/
   mkdir ~/.config/dunst/
-  mkdir ~/.config/jgmenu/
 
   # Copy configurations for Desktop environment
-  cp -r bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-  cp -r sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-  cp -r polybar/config.ini  ~/.config/polybar/config.ini
-  cp -r dunst/dunstrc ~/.config/dunst/dunstrc
-  cp -r picom.conf ~/.config/picom.conf
-  cp -r jgmenu/jgmenurc ~/.config/jgmenu/
-  cp -r jgmenu/menu.csv ~/.config/jgmenu/
+  cp configFiles/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+  cp configFiles/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+  cp configFiles/polybar/config.ini  ~/.config/polybar/config.ini
+  cp configFiles/dunst/dunstrc ~/.config/dunst/dunstrc
+  cp configFiles/picom/picom.conf ~/.config/picom.conf
 }
 
 command
