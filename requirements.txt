@@ -70,6 +70,8 @@ pipewire-pulse
 
 wget
 
+dotnet-sdk
+
 lightdm
 
 lightdm-gtk-greeter

@@ -7,6 +7,8 @@ command() {
   rm -r ~/.config/sxhkd
   rm -r ~/.config/MinD
   rm -r ~/.config/picom
+  
+  rm ~/.fonts/PowerlineExtraSymbols.otf
 }
 
 command
