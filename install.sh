@@ -8,17 +8,14 @@ command() {
   xdg-user-dirs-gtk-update
   
   # Configurations
-  mkdir ~/.config/bspwm/
-  mkdir ~/.config/sxhkd/
-  mkdir ~/.config/polybar/
-  mkdir ~/.config/dunst/
-
+  mkdir ~/.config
+  mkdir ~/.fonts
+  
   # Copy configurations for Desktop environment
-  cp configFiles/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
-  cp configFiles/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
-  cp configFiles/polybar/config.ini  ~/.config/polybar/config.ini
-  cp configFiles/dunst/dunstrc ~/.config/dunst/dunstrc
-  cp configFiles/picom/picom.conf ~/.config/picom.conf
+  cp -r configFiles/* ~/.config
+  
+  cd ~/.fonts
+  wget https://github.com/ryanoasis/powerline-extra-symbols/raw/master/PowerlineExtraSymbols.otf
 }
 
 command
