@@ -75,3 +75,5 @@ dotnet-sdk
 lightdm
 
 lightdm-gtk-greeter
+
+wmname
