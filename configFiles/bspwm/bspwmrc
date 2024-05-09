@@ -4,7 +4,7 @@ bspc config window_gap 10
 bspc config pointer_modifier mod4
 bspc monitor -d 1 2 3 4 5
 
-#bspc rule -a firefox desktop=^1 follow=off focus=on
+bspc rule -a Yad:yad state=floating border=off
 
 bspc config normal_border_color "#4d4d4d"
 bspc config active_border_color "#49c4c3"
