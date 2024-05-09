@@ -1,10 +1,10 @@
-konsole
+kitty
 
 polybar
 
 fish
 
-neofetch
+fastfetch
 
 xdg-desktop-portal-lxqt
 
