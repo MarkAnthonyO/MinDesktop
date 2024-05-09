@@ -13,7 +13,7 @@ bspc config presel_feedback_color "#4d4d4d"
 
 polybar main &
 
-sxhkd &
+systemd-inhibit --what=handle-power-key --why="Custom script" sxhkd &
 
 nitrogen --restore &
             
