@@ -22,5 +22,7 @@ picom &
 setxkbmap es &
 
 wmname LG3D &
-            
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
