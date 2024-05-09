@@ -70,7 +70,7 @@ pipewire-pulse
 
 wget
 
-dotnet-sdk
+yad
 
 lightdm
 
