@@ -13,6 +13,7 @@ command() {
   
   # Copy configurations for Desktop environment
   cp -r configFiles/* ~/.config
+  sudo cp -r systemd/* /etc/systemd/
   
   cd ~/.fonts
   wget https://github.com/ryanoasis/powerline-extra-symbols/raw/master/PowerlineExtraSymbols.otf
