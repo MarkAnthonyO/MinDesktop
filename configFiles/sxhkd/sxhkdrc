@@ -27,3 +27,6 @@ super + f
 
 super + @space
 		   bspc node -t ~floating
+
+XF86PowerOff
+                   ~/.config/pwoff/menu.sh
