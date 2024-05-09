@@ -1,5 +1,5 @@
 #!/bin/sh
-yad --image="stop" --text="The PC will shutting down, are you sure?" --button=Shutting down:0 --button=Cancel:1
+yad --image="stop" --text="The PC will shutting down, are you sure?" --button="Shutting down":0 --button="Cancel":1
 ans=$?
 
 if [ $ans -eq 0 ]
