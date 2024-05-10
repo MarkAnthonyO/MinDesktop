@@ -70,6 +70,8 @@ pipewire-alsa
 
 pipewire-pulse
 
+pavucontrol
+
 wget
 
 yad
