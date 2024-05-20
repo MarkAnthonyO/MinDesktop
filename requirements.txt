@@ -8,8 +8,6 @@ fastfetch
 
 gnome-screenshot
 
-xdg-desktop-portal-lxqt
-
 xdg-desktop-portal-gtk
 
 xdg-user-dirs-gtk
