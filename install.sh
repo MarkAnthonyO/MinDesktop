@@ -14,6 +14,11 @@ command() {
   # Copy configurations for Desktop environment
   cp -r configFiles/* ~/.config
   
+  # Copy lightdm conf
+  sudo mkdir /etc/lightdm/
+  sudo cp global/lightdm/* /etc/lightdm/
+  
+  # Download powerline extra symbols font
   cd ~/.fonts
   wget https://github.com/ryanoasis/powerline-extra-symbols/raw/master/PowerlineExtraSymbols.otf
 }
