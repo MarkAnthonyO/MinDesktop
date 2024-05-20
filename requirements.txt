@@ -12,6 +12,8 @@ xdg-desktop-portal-gtk
 
 xdg-user-dirs-gtk
 
+tumbler
+
 xorg
 
 gpicview
