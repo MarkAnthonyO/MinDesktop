@@ -82,4 +82,6 @@ lightdm-webkit2-greeter
 
 lightdm-webkit-theme-litarvan
 
+accountsservice
+
 wmname
