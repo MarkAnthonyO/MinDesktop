@@ -17,6 +17,7 @@ command() {
   # Copy lightdm conf
   sudo mkdir /etc/lightdm/
   sudo cp global/lightdm/* /etc/lightdm/
+  chmod +x ~/.config/pwoff/menu.sh
   
   # Download powerline extra symbols font
   cd ~/.fonts
